@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
+import { gql} from '@apollo/client';
 
 import { Query } from "react-apollo";
-import gql from "graphql-tag";
+
 
 
 const allUSers = gql `
@@ -29,19 +30,17 @@ class Users extends Component {
                   if (loading) return <div>Fetching</div>
                   if (error) return <div>Error</div>
 
-                  const U = data.allUsers.edges
-                  const userName =  U.map(item => {
-                      return item.node.name
 
-                  })
-                  console.log(userName)
+        return  data.allUsers.edges.map((item) => (
 
 
-        return (
-            <div>
-                Users
+            <div key={item.node.id}>
+
+                {`${item.node.name} ${item.node.id}`}
+
             </div>
-        )
+
+        ))
               }}
           </Query>
         )

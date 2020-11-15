@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
 import Users from "./components/Users";
+import AddUser from './components/AddUser'
 import { ApolloProvider } from 'react-apollo';
 import ApolloClient from 'apollo-boost';
 
@@ -78,6 +79,11 @@ class App extends Component {
 
     };
 
+    addUser = e => {
+        e.preventDefault()
+        console.log('add User click')
+    }
+
 
 
 
@@ -102,6 +108,7 @@ class App extends Component {
                                 handleEdit={this.handleEdit}
 
                             />
+                            <AddUser />
                             <Users/>
                         </div>
                     </div>
