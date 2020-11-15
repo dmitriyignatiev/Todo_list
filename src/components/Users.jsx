@@ -5,7 +5,7 @@ import { Query } from "react-apollo";
 
 
 
-const allUSers = gql `
+export const allUSers = gql `
     {
       allUsers{
         edges{

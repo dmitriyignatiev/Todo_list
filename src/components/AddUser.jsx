@@ -16,29 +16,27 @@ const ADD_USER = gql`
 `;
 
 
+
+
+
 const AddUser = () => {
 
     const [userInput, setUserInput] = useState('')
 
-    const updateCache = (cache, {data}) =>
-    {
-        const existingUsers = cache.readQuery({
-            query: allUSers
-        });
-
-        // const newUser = data.insert_user.returnin
-
-    }
 
 
 
-    const [addUser] = useMutation(ADD_USER, {update: updateCache});
+
+    const [addUser] = useMutation(ADD_USER);
 
     return (
         <form
-            className="formInput" onSubmit= { (e) => {
+            className="formInput"
+            onSubmit= { (e) => {
             e.preventDefault()
-            addUser({variables:{name:userInput}})
+            addUser({variables:{name:userInput},
+            refetchQueries:[{query:allUSers}]
+            })
         }}
 
         >
