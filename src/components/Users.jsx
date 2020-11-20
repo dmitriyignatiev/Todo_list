@@ -22,6 +22,14 @@ export const allUSers = gql `
     }
 `
 
+export const UpdateUser = gql`
+mutation update($id: Int, $name:String){
+  updateUser(id:$id, name:$name){
+    ok
+  }
+}
+`
+
 const Users = () => {
 
     // const del = client.mutate({
@@ -30,6 +38,18 @@ const Users = () => {
     //     refetchQueries:[{query:allusers}]
     //     })
     //     .then((response) => console.log(response.data))
+
+    const del2 = (id) => {
+        client.mutate({
+            mutation:DELETE_USER,
+            variables:{id:id},
+            refetchQueries:[{query:allusers}]
+        })
+            .then((response) => console.log(response.data))
+            .catch((err) => console.error(err));
+    }
+
+
 
 
 
@@ -46,18 +66,28 @@ const Users = () => {
             <Userprops
                 name = {item.node.name}
                 id = {item.node.id}
+                // delUser = {()=>del2(item.node.id)}
                 delUser = {() => {
                     client.mutate({
-                        mutation:DELETE_USER,
-                        variables:{id:item.node.id},
-                        refetchQueries:[{query:allUSers}]
+                        mutation: DELETE_USER,
+                        variables: {id: item.node.id},
+                        refetchQueries: [{query: allUSers}]
                     })
                         .then((response) => console.log(response.data))
                         .catch((err) => console.error(err));
                 }}
-                EditUser = {() => {
-                    console.log('id')}
-                }
+
+                MySub = {({inputText}) => {
+                    client.mutate({
+                        mutation: UpdateUser,
+                        variables: {id: item.node.id, name: inputText},
+                        refetchQueries: [{query: allUSers}]
+                    })
+                        .then((response) => console.log(response.data))
+                        .catch((err) => console.error(err));
+                }}
+
+
             />
         </div>
 

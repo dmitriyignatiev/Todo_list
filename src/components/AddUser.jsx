@@ -25,8 +25,6 @@ export const DELETE_USER = gql `
 
 
 
-
-
 const AddUser = () => {
 
     const [userInput, setUserInput] = useState('')
