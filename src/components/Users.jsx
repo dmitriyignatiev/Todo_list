@@ -1,8 +1,12 @@
-import React, {Component} from 'react';
-import { gql} from '@apollo/client';
+import React, {useEffect} from 'react';
+import {gql, useMutation} from '@apollo/client';
 
-import { Query } from "react-apollo";
+// import { Query } from "react-apollo";
+import {useQuery} from "@apollo/react-hooks";
+import Userprops from "./Userprops";
 
+import {DELETE_USER} from './AddUser';
+import {client} from '../App'
 
 
 export const allUSers = gql `
@@ -18,34 +22,48 @@ export const allUSers = gql `
     }
 `
 
-class Users extends Component {
+const Users = () => {
 
-    render() {
-
-        return (
-
-          <Query query={allUSers}>
-
-              {({ loading, error, data }) => {
-                  if (loading) return <div>Fetching</div>
-                  if (error) return <div>Error</div>
+    // const del = client.mutate({
+    //     mutation:DELETE_USER,
+    //     variables:{id:id},
+    //     refetchQueries:[{query:allusers}]
+    //     })
+    //     .then((response) => console.log(response.data))
 
 
-        return  data.allUsers.edges.map((item) => (
 
+    const {loading, error, data} = useQuery(allUSers);
+    if (loading) return <div>Fetching</div>
+    if (error) return <div>Error</div>
 
-            <div key={item.node.id}>
+    const allusers = data.allUsers.edges
 
-                {`${item.node.name} ${item.node.id}`}
+    return allusers.map((item) => (
 
-            </div>
+        <div key={item.node.id}>
 
-        ))
-              }}
-          </Query>
-        )
-    }
+            <Userprops
+                name = {item.node.name}
+                id = {item.node.id}
+                delUser = {() => {
+                    client.mutate({
+                        mutation:DELETE_USER,
+                        variables:{id:item.node.id},
+                        refetchQueries:[{query:allUSers}]
+                    })
+                        .then((response) => console.log(response.data))
+                        .catch((err) => console.error(err));
+                }}
+                EditUser = {() => {
+                    console.log('id')}
+                }
+            />
+        </div>
+
+    ))
 
 }
+
 
 export default Users;

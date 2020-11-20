@@ -5,6 +5,8 @@ class TodoItem extends Component {
         const {title, handleDelete, handleEdit} = this.props;
         console.log('title is ', title)
 
+
+
         return (
             <li className="list-group-item text-capitalize d-flex justify-content-between my-2">
                 <h6>{title}</h6>

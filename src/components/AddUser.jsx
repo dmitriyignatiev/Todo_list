@@ -3,7 +3,7 @@ import gql from "graphql-tag";
 import {useMutation} from "@apollo/react-hooks";
 import {allUSers} from './Users';
 
-const ADD_USER = gql`
+export const ADD_USER = gql`
    mutation createU($name: String){
   createUser(name: $name){
     ok
@@ -15,6 +15,14 @@ const ADD_USER = gql`
 }
 `;
 
+export const DELETE_USER = gql `
+   mutation dele($id: Int){
+    deleteUser(id:$id){
+        ok
+    }
+}
+`
+
 
 
 
@@ -22,11 +30,6 @@ const ADD_USER = gql`
 const AddUser = () => {
 
     const [userInput, setUserInput] = useState('')
-
-
-
-
-
     const [addUser] = useMutation(ADD_USER);
 
     return (

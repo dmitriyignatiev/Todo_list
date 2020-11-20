@@ -9,7 +9,7 @@ import ApolloClient from 'apollo-boost';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { v4 as uuidv4 } from 'uuid';
 
-const client = new ApolloClient({
+export const client = new ApolloClient({
     uri: 'http://localhost:5000/graphql'
 });
 
