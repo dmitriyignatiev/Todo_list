@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 
 
 
+
+
 const Userprops = props => {
     // console.log('dewd', props)
 
@@ -13,8 +15,10 @@ const Userprops = props => {
 
         <li className="list-group-item text-capitalize d-flex justify-content-between my-2">
 
-                {isEdit ? <input value={inputText} onChange={(event)=>
-                {setInputText(event.target.value)}}/> : props.name }
+                {isEdit ? <input value={inputText}
+                                 onChange={(event)=>
+                                 {setInputText(event.target.value)}}/> : props.name }
+
 
             <div className="todo-icon">
                   <span className="mx-2 text-success">

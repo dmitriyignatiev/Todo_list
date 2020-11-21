@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import {gql, useMutation} from '@apollo/client';
 
-// import { Query } from "react-apollo";
 import {useQuery} from "@apollo/react-hooks";
 import Userprops from "./Userprops";
 

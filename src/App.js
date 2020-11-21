@@ -5,9 +5,11 @@ import Users from "./components/Users";
 import AddUser from './components/AddUser'
 import { ApolloProvider } from 'react-apollo';
 import ApolloClient from 'apollo-boost';
+import All from './components/allUsers'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { v4 as uuidv4 } from 'uuid';
+import UserOne from "./components/UserOne";
 
 export const client = new ApolloClient({
     uri: 'http://localhost:5000/graphql'
@@ -110,6 +112,8 @@ class App extends Component {
                             />
                             <AddUser />
                             <Users/>
+                            <All />
+
                         </div>
                     </div>
                 </div>
