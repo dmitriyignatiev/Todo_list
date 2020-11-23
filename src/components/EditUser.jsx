@@ -1,32 +1,30 @@
 import React from 'react';
 import {COUNT} from './mutation'
 import {useSubscription} from "@apollo/react-hooks";
+import {Subscription} from "react-apollo";
+import gql from "graphql-tag";
+
+const newSeonds = gql`
+    subscription count($upTo: Int){
+    countSeconds(upTo:$upTo)
+    }
+`
 
 const EditUser = () => {
-
-
-        const { loading, error, data } = useSubscription(COUNT);
-        if (loading) {
-            return <span>Loading...</span>;
-        }
-        if (error) {
-            return <span>Error</span>;
-        }
-
-
-
-
-
     return (
-        <div>
-            UserEdit
-            {data}
+        <Subscription
+            subscription={newSeonds}
+            variables={{upTo: 5}}
+        >
+            //TODO subscription
+         {(data) => {
+                console.log(data)
+                return null;
+            }}
 
 
-
-
-
-        </div>
+        </Subscription>
+       
     )
 }
 
