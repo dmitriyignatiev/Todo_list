@@ -1,7 +1,8 @@
 import Recat from 'react';
 import {client} from "../App";
-import {DELETE_USER} from "./AddUser";
-import {allUSers, UpdateUser} from "./Users";
+
+import {DELETE_USER, countSeconds} from "./AddUser";
+import {allUSers, UpdateUser } from "./Users";
 
 export const del3 = (id) => {
     client.mutate({
@@ -19,4 +20,15 @@ export const newUpdate = (id, name) => {
         variables:{id, name},
         refetchQueries: [{query: allUSers}]
     })
+}
+
+export const COUNT = () => {
+    client.subscribe({
+        subsciption: countSeconds,
+        variables:{upTo: 5}
+    })
+        .then((response) => console.log(response.data))
+        .catch((err) => console.log(err))
+
+
 }

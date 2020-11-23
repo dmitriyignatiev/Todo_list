@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4774efaf-246e-4aba-8029-78c8c53c6109" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/UserOne.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/allUsers.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/mutation.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Userprops.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Userprops.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddUser.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddUser.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EditUser.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditUser.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/new.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditUser.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mutation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mutation.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,10 +59,14 @@
       <scripts>
         <script value="start" />
       </scripts>
-      <node-interpreter value="project" />
+      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v14.15.1/bin/node" />
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Debug Application" />
+      <item itemvalue="npm.npm start" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -92,25 +96,29 @@
     </state>
     <state x="588" y="274" width="800" height="677" key="#ESLint/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1605110527273" />
     <state x="1128" y="487" key="#ESLint/67.41.3773.2119@67.41.3773.2119" timestamp="1605445665072" />
-    <state width="3739" height="602" key="GridCell.Tab.0.bottom" timestamp="1605967095053">
-      <screen x="67" y="41" width="3773" height="2119" />
+    <state x="667" y="303" width="642" height="619" key="#npm_start" timestamp="1606110556463">
+      <screen x="67" y="27" width="1853" height="1173" />
     </state>
-    <state width="1830" height="189" key="GridCell.Tab.0.bottom/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1605248707531" />
+    <state x="667" y="303" width="642" height="619" key="#npm_start/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1606110556463" />
+    <state width="1830" height="294" key="GridCell.Tab.0.bottom" timestamp="1606113652368">
+      <screen x="67" y="27" width="1853" height="1173" />
+    </state>
+    <state width="1830" height="294" key="GridCell.Tab.0.bottom/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1606113652368" />
     <state width="3739" height="602" key="GridCell.Tab.0.bottom/67.41.3773.2119@67.41.3773.2119" timestamp="1605967095053" />
-    <state width="3739" height="602" key="GridCell.Tab.0.center" timestamp="1605967095052">
-      <screen x="67" y="41" width="3773" height="2119" />
+    <state width="1830" height="294" key="GridCell.Tab.0.center" timestamp="1606113652368">
+      <screen x="67" y="27" width="1853" height="1173" />
     </state>
-    <state width="1830" height="189" key="GridCell.Tab.0.center/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1605248707531" />
+    <state width="1830" height="294" key="GridCell.Tab.0.center/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1606113652368" />
     <state width="3739" height="602" key="GridCell.Tab.0.center/67.41.3773.2119@67.41.3773.2119" timestamp="1605967095052" />
-    <state width="3739" height="602" key="GridCell.Tab.0.left" timestamp="1605967095052">
-      <screen x="67" y="41" width="3773" height="2119" />
+    <state width="1830" height="294" key="GridCell.Tab.0.left" timestamp="1606113652368">
+      <screen x="67" y="27" width="1853" height="1173" />
     </state>
-    <state width="1830" height="189" key="GridCell.Tab.0.left/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1605248707531" />
+    <state width="1830" height="294" key="GridCell.Tab.0.left/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1606113652368" />
     <state width="3739" height="602" key="GridCell.Tab.0.left/67.41.3773.2119@67.41.3773.2119" timestamp="1605967095052" />
-    <state width="3739" height="602" key="GridCell.Tab.0.right" timestamp="1605967095053">
-      <screen x="67" y="41" width="3773" height="2119" />
+    <state width="1830" height="294" key="GridCell.Tab.0.right" timestamp="1606113652368">
+      <screen x="67" y="27" width="1853" height="1173" />
     </state>
-    <state width="1830" height="189" key="GridCell.Tab.0.right/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1605248707531" />
+    <state width="1830" height="294" key="GridCell.Tab.0.right/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1606113652368" />
     <state width="3739" height="602" key="GridCell.Tab.0.right/67.41.3773.2119@67.41.3773.2119" timestamp="1605967095053" />
     <state width="1830" height="392" key="GridCell.Tab.1.bottom" timestamp="1605158588513">
       <screen x="67" y="27" width="1853" height="1173" />
@@ -164,17 +172,17 @@
       <screen x="67" y="41" width="3773" height="2119" />
     </state>
     <state x="1195" y="559" key="SettingsEditor/67.41.3773.2119@67.41.3773.2119" timestamp="1605965406171" />
-    <state x="641" y="351" width="704" height="522" key="find.popup" timestamp="1605158981911">
+    <state x="641" y="351" width="704" height="522" key="find.popup" timestamp="1606111093926">
       <screen x="67" y="27" width="1853" height="1173" />
     </state>
-    <state x="641" y="351" width="704" height="522" key="find.popup/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1605158981911" />
+    <state x="641" y="351" width="704" height="522" key="find.popup/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1606111093926" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/App.js</url>
-          <line>37</line>
+          <line>75</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">

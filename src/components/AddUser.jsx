@@ -23,6 +23,12 @@ export const DELETE_USER = gql `
 }
 `
 
+export const countSeconds = gql`
+    subscription count($upTo: Int){
+    countSeconds(upTo:$upTo)
+    
+    }
+`
 
 
 const AddUser = () => {

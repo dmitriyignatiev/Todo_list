@@ -31,13 +31,6 @@ mutation update($id: Int, $name:String){
 
 const Users = () => {
 
-    // const del = client.mutate({
-    //     mutation:DELETE_USER,
-    //     variables:{id:id},
-    //     refetchQueries:[{query:allusers}]
-    //     })
-    //     .then((response) => console.log(response.data))
-
     const del2 = (id) => {
         client.mutate({
             mutation:DELETE_USER,
@@ -47,8 +40,6 @@ const Users = () => {
             .then((response) => console.log(response.data))
             .catch((err) => console.error(err));
     }
-
-
 
 
 
