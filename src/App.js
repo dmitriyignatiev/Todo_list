@@ -7,9 +7,6 @@ import { ApolloProvider } from 'react-apollo';
 import All from './components/allUsers'
 import { ApolloProvider as ApolloHooksProvider } from "react-apollo-hooks";
 
-
-
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { v4 as uuidv4 } from 'uuid';
 import EditUser from "./components/EditUser";
