@@ -25,7 +25,7 @@ export const newUpdate = (id, name) => {
 export const COUNT = () => {
     client.subscribe({
         subsciption: countSeconds,
-        variables:{upTo: 5}
+        variables:{upTo: 10}
     })
         .then((response) => console.log(response.data))
         .catch((err) => console.log(err))

@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4774efaf-246e-4aba-8029-78c8c53c6109" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/EditUser.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditUser.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mutation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mutation.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +81,7 @@
       <workItem from="1605965502884" duration="9042000" />
       <workItem from="1606134463185" duration="546000" />
       <workItem from="1606135308195" duration="4983000" />
-      <workItem from="1606280889226" duration="1145000" />
+      <workItem from="1606280889226" duration="6232000" />
     </task>
     <servers />
   </component>
@@ -103,25 +102,25 @@
       <screen x="67" y="27" width="1853" height="1173" />
     </state>
     <state x="776" y="370" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1606215199177" />
-    <state width="1830" height="197" key="GridCell.Tab.0.bottom" timestamp="1606216697610">
+    <state width="1830" height="182" key="GridCell.Tab.0.bottom" timestamp="1606284923410">
       <screen x="67" y="27" width="1853" height="1173" />
     </state>
-    <state width="1830" height="197" key="GridCell.Tab.0.bottom/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1606216697610" />
+    <state width="1830" height="182" key="GridCell.Tab.0.bottom/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1606284923410" />
     <state width="3739" height="602" key="GridCell.Tab.0.bottom/67.41.3773.2119@67.41.3773.2119" timestamp="1605967095053" />
-    <state width="1830" height="197" key="GridCell.Tab.0.center" timestamp="1606216697610">
+    <state width="1830" height="182" key="GridCell.Tab.0.center" timestamp="1606284923410">
       <screen x="67" y="27" width="1853" height="1173" />
     </state>
-    <state width="1830" height="197" key="GridCell.Tab.0.center/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1606216697610" />
+    <state width="1830" height="182" key="GridCell.Tab.0.center/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1606284923410" />
     <state width="3739" height="602" key="GridCell.Tab.0.center/67.41.3773.2119@67.41.3773.2119" timestamp="1605967095052" />
-    <state width="1830" height="197" key="GridCell.Tab.0.left" timestamp="1606216697610">
+    <state width="1830" height="182" key="GridCell.Tab.0.left" timestamp="1606284923410">
       <screen x="67" y="27" width="1853" height="1173" />
     </state>
-    <state width="1830" height="197" key="GridCell.Tab.0.left/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1606216697610" />
+    <state width="1830" height="182" key="GridCell.Tab.0.left/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1606284923410" />
     <state width="3739" height="602" key="GridCell.Tab.0.left/67.41.3773.2119@67.41.3773.2119" timestamp="1605967095052" />
-    <state width="1830" height="197" key="GridCell.Tab.0.right" timestamp="1606216697610">
+    <state width="1830" height="182" key="GridCell.Tab.0.right" timestamp="1606284923410">
       <screen x="67" y="27" width="1853" height="1173" />
     </state>
-    <state width="1830" height="197" key="GridCell.Tab.0.right/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1606216697610" />
+    <state width="1830" height="182" key="GridCell.Tab.0.right/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1606284923410" />
     <state width="3739" height="602" key="GridCell.Tab.0.right/67.41.3773.2119@67.41.3773.2119" timestamp="1605967095053" />
     <state width="1830" height="392" key="GridCell.Tab.1.bottom" timestamp="1605158588513">
       <screen x="67" y="27" width="1853" height="1173" />
@@ -179,10 +178,10 @@
       <screen x="67" y="27" width="1853" height="1173" />
     </state>
     <state x="647" y="230" width="683" height="764" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1606132649481" />
-    <state x="641" y="351" width="704" height="522" key="find.popup" timestamp="1606111093926">
+    <state x="641" y="351" width="704" height="522" key="find.popup" timestamp="1606282955276">
       <screen x="67" y="27" width="1853" height="1173" />
     </state>
-    <state x="641" y="351" width="704" height="522" key="find.popup/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1606111093926" />
+    <state x="641" y="351" width="704" height="522" key="find.popup/67.27.1853.1173/1920.0.1920.1200@67.27.1853.1173" timestamp="1606282955276" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
